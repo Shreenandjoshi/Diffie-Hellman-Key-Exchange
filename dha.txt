@@ -1,0 +1,33 @@
+import java.util.*;
+class dha {
+ public static void main(String[] args) {
+int g=9, p=23,x,y,s,t,a,b;
+Scanner sc= new Scanner(System.in);
+System.out.println("enter first number=");
+ a= sc.nextInt();
+System.out.println("enter second number=");
+ b= sc.nextInt();
+if(a<p && b<p)
+{
+x=(Mymath.power(g,a))%(p);
+y=(Mymath.power(g,b))%(p);
+s=(Mymath.power(y,a))%(p);
+t=(Mymath.power(x,b))%(p);
+System.out.println("key=" +s);
+System.out.println("key=" +t);
+}
+else
+{
+System.out.println("Invalid Input");    
+}
+ }
+}
+class Mymath{
+static int power(int base,int expo){
+int e=1;
+for(int i=0;i<expo;i++){
+e=e*base;
+}
+return e;
+}
+}
